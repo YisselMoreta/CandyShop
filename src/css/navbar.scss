@@ -1,0 +1,21 @@
+.navbar {
+    
+    z-index: 3;
+   
+}
+.navbar-light {
+    background-color: #E3F0F0;
+    // background-image: linear-gradient(to left top, #e3f0f0, #c1eaec, #9be3ea, #6edce9, #12d4eb);
+}
+.oval {
+    width: 35vw;
+    height: 10vh;
+    padding-top: 1em;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #006f98;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+}
