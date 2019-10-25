@@ -4,10 +4,12 @@ import './App.css';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from './components/home';
 import Navbar from './components/navbar';
-import CrearProducto from './componentesBackend/CrearProducto';
-import Productos from './componentesBackend/Productos';
-import Producto from './componentesBackend/Producto';
-import EditarProducto from './componentesBackend/EditarProducto';
+import CrearProducto from './components/CrearProducto';
+import Productos from './components/Productos';
+import Producto from './components/Producto';
+import EditarProducto from './components/EditarProducto';
+import Login from './components/login';
+
 
 
 
@@ -24,7 +26,7 @@ function App() {
      <Route path="/" component={Home} exact />
      <Route path="/productos" component={Productos} exact />
      
-     <Route path="/nuevoproducto" component={CrearProducto} exact />
+     <Route path="/crearproducto" component={CrearProducto} exact />
      <Route path="/editarproducto" component={EditarProducto} exact />
      </Switch>
     

@@ -2,6 +2,7 @@ import React from 'react';
 import '../css/home.scss';
 import { Link } from 'react-router-dom';
 
+
 export default class Home extends React.Component {
     constructor() {
         super()
@@ -21,7 +22,9 @@ export default class Home extends React.Component {
                     <p>Endulza tu día con las mejores chuches<span>😊</span></p>
                     <Link to="/productos" className="btn btn-primary js-scroll-trigger">Empezar</Link>
                   </div>
+                  
                 </header>
+               
                 </div>
             )
         }

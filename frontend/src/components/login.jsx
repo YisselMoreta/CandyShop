@@ -1,47 +1,57 @@
 import React from 'react';
 import '../css/login.scss';
 import Home from './home';
+import CrearProducto from './CrearProducto';
+import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+
 
 
 
 import firebase, { auth, provider } from '../Auth/firebase';
 
-export default class Login extends React.Component {
+class Login extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       user: null
     }
-    this.login = this.login.bind(this)
-    this.logout = this.logout.bind(this)
+   
   }
-  login() {
+  login =() => {
     auth.signInWithPopup(provider).then((result) => {
       this.setState({
           user: result.user
       })
     })
   }
-  logout() {
+  logout =() => {
     auth.signOut().then((result) => {
       this.setState({
         user: null
       })
     })
   }
-  componentDidMount() {
+  componentDidMount =() => {
     auth.onAuthStateChanged((user) => {
       if (user) {
         this.setState({user})
       }
     })
   }
+  
+  goTO =() =>  {
+    const { history } = this.props;
+    return this.context.history.push('/crearproducto')
+  }
   render() {
     let authButton = this.state.user ?
-      <button onClick={this.logout}>cerrar sesión</button> :
-      <button onClick={this.login}>Iniciar sesión</button>
+      <button className="boton"  onClick={this.logout}>cerrar sesión</button> :
+      <button className="boton" onClick={this.login}>Iniciar sesión</button>
     let uploader = this.state.user ?
-      <Home/> :  <pre></pre>
+    <button className="boton" onClick={() => this.props.history.push('/crearproducto')}>Crear Producto</button>
+     
+     :  <pre></pre>
       
     return (
       <div>
@@ -51,3 +61,5 @@ export default class Login extends React.Component {
     )
   }
 }
+
+export default withRouter(Login)
