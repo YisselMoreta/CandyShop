@@ -1,0 +1,115 @@
+#navegacion {
+    nav {
+        font-size: 1.2em;
+        font-family: 'Emilys Candy', cursive;
+        @media (min-width: 400px) {font-size: 1.5em;}
+        @media (min-width: 600px) {}
+        @media (min-width: 800px) {}
+        @media (min-width: 900px) {}
+        @media (min-width: 1024px) {
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            justify-content: flex-end;}
+        
+    }
+
+    .navbar-light {
+        background-color: #E3F0F0;
+        
+    }
+    .oval {
+        width: 35vw;
+        height: 10vh;
+        padding-top: 1em;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        background: #006f98;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        @media (min-width: 400px) {}
+        @media (min-width: 600px) { font-size: 1.5em;}
+        @media (min-width: 800px) {}
+        @media (min-width: 900px) {}
+        @media (min-width: 1024px) {width: 22vw; height: 8vh;padding-top: 0.35em;}
+        
+    }
+    .navbar-toggler {
+        text-decoration: none;
+        outline: none;
+        @media (min-width: 400px) {}
+        @media (min-width: 600px) {width: 10vw; height: 7vh;}
+        @media (min-width: 800px) {}
+        @media (min-width: 900px) {}
+        @media (min-width: 1024px) {visibility: hidden;}
+       
+    }
+    
+ 
+    .nav-link {
+        padding-top: 1em;
+        
+        font-family: 'Emilys Candy', cursive;
+        @media (min-width: 400px) {}
+        @media (min-width: 600px) {}
+        @media (min-width: 800px) {}
+        @media (min-width: 900px) {}
+        @media (min-width: 1024px) {}
+    }
+    button {
+        
+        border: 1px solid #006f98;
+        border-radius: 0.5em;
+        background-color: #006f98;
+        color: white;
+        padding: 0.3em;
+        @media (min-width: 400px) {}
+        @media (min-width: 600px) {}
+        @media (min-width: 800px) {}
+        @media (min-width: 900px) {}
+        @media (min-width: 1024px) {}
+    }
+    .form-inline {
+        margin-top: 0;
+        @media (min-width: 400px) {}
+        @media (min-width: 600px) {}
+        @media (min-width: 800px) {}
+        @media (min-width: 900px) {}
+        @media (min-width: 1024px) {}
+    }
+    #navbarSupportedContent ul{
+        font-size: 1.5em;
+        @media (min-width: 400px) {}
+        @media (min-width: 600px) {}
+        @media (min-width: 800px) {}
+        @media (min-width: 900px) {}
+        @media (min-width: 1024px) {}
+  
+      }
+      .btn-outline-success {
+       
+        @media (min-width: 400px) {}
+        @media (min-width: 600px) {}
+        @media (min-width: 800px) {}
+        @media (min-width: 900px) {}
+        @media (min-width: 1024px) {
+            width: 4em;
+            height: 2em;
+            font-size: 1.5em;
+            margin-right: 1em;
+        }
+    }
+}
+
+@media (min-width: 400px) {}
+@media (min-width: 600px) {}
+@media (min-width: 800px) {}
+@media (min-width: 900px) {}
+@media (min-width: 1024px) {}
+
+
+
+
+

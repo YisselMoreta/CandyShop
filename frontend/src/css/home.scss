@@ -1,0 +1,251 @@
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.content {
+    max-width: 40rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(to right top, #051937, #074167, #006f98, #00a0c5, #12d4eb);
+    
+    @media (min-width: 600px) {
+        max-width: 60rem;
+
+    }
+    @media (min-width: 800px) {
+        max-width: 80rem;
+
+    }
+    @media (min-width: 1024px) {
+        max-width: 100%;
+
+    }
+  
+
+
+}
+.header-video{
+    position: absolute;
+    top: 35%;
+    right: 0;
+    width: 100%;
+    height: 40vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 0;
+    -webkit-animation: mymove 3s;  
+    -webkit-animation-fill-mode: forwards; 
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+  
+    
+}
+
+@-webkit-keyframes mymove {
+    from {top: 0px}
+    to {top: 375px }
+    
+  }
+  
+  @keyframes mymove {
+    from {top: 0px}
+    to {top: 375px}
+  }
+  @media (min-width: 400px) {
+    @-webkit-keyframes mymove {
+        from {top: 0px}
+        to {top: 500px }
+        
+      }
+    @keyframes mymove {
+        from {top: 0px}
+        to {top: 500px}
+      }
+
+}
+  @media (min-width: 600px) {
+    @-webkit-keyframes mymove {
+        from {top: 0px}
+        to {top: 510px }
+        
+      }
+    @keyframes mymove {
+        from {top: 0px}
+        to {top: 510px}
+      }
+
+}
+  @media (min-width: 800px) {
+    @-webkit-keyframes mymove {
+        from {top: 0px}
+        to {top: 500px }
+        
+      }
+    @keyframes mymove {
+        from {top: 0px}
+        to {top: 500px}
+      }
+
+}
+@media (min-width: 1024px) {
+    @-webkit-keyframes mymove {
+        from {top: 0px}
+        to {top: 590px }
+        
+      }
+    @keyframes mymove {
+        from {top: 0px}
+        to {top: 590px}
+      }
+   
+}
+@media (min-width: 1104px) {
+    @-webkit-keyframes mymove {
+        from {top: 0px}
+        to {top: 300px }
+        
+      }
+    @keyframes mymove {
+        from {top: 0px}
+        to {top: 300px}
+      }
+   
+}
+
+.header-video video {
+   max-width: 90vw;
+   max-height: 60vh;
+   border: 1px solid #051937;
+ 
+
+   
+  
+       
+}
+.header-overlay {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 10;
+    left: 0;
+   
+    z-index: 1;
+   
+}
+.header-content {
+    height: 60vh;
+    padding-bottom: 38em;
+    z-index: 2;
+    @media (min-width: 310px) {
+        padding-bottom: 33em;
+
+    }
+   
+    @media (min-width: 410px) {
+        padding-bottom: 40em;
+
+    }
+    @media (min-width: 600px) {
+        padding-bottom: 58em;
+
+    }
+    @media (min-width: 800px) {
+        padding-bottom: 62em;
+        padding-left: 5em;
+
+    }
+    @media (min-width: 1024px) {
+        padding-bottom: 82em;
+        padding-left: 6em;  
+       
+    }
+    @media (min-width: 1100px) {
+        padding-top: 55em;
+        padding-left:24em;  
+       
+    }
+    
+}
+.header-content h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+
+    @media (min-width: 600px) {
+        font-size: 4em;
+
+
+    }
+    @media (min-width: 800px) {
+        font-size: 5em;
+
+    }
+    @media (min-width: 1024px) {
+        font-size: 6em;
+       
+    }
+
+}
+.header-content p {
+    font-size: 1.5em;
+    display: block;
+    padding-bottom: 2em;
+    margin-bottom: 0;
+    @media (min-width: 600px) {
+        font-size: 3em;
+
+
+    }
+    
+    
+    @media (min-width: 600px) {
+        padding-bottom: 1em;
+
+    }
+    @media (min-width: 800px) {
+        font-size: 2em;
+
+    }
+    @media (min-width: 1024px) {
+        font-size: 2.5em;
+       
+    }
+    
+}
+.btn-primary{
+    background: #c44569 ;
+    color: white;
+    font-size: 1.2rem;
+    text-decoration: none;
+    @media (min-width: 370px) {
+        font-size: 1.4em;
+        
+        
+
+    }
+    @media (min-width: 600px) {
+        font-size: 1.8em;
+
+    }
+    @media (min-width: 800px) {
+        font-size: 2em;
+
+    }
+    @media (min-width: 1024px) {
+        font-size: 3em;
+
+    }
+    @media (min-width: 1100px) {
+        margin-top: 2em;
+         
+       
+    }
+    
+    
+}
+

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {connect} from 'react-redux';
 
  class Producto extends Component {
+   
     render() {
         return (
             <div className="producto">

@@ -38,11 +38,11 @@ export default class Login extends React.Component {
   }
   render() {
     let authButton = this.state.user ?
-      <button onClick={this.logout}>LogOut</button> :
-      <button onClick={this.login}>LogIn</button>
+      <button onClick={this.logout}>cerrar sesión</button> :
+      <button onClick={this.login}>Iniciar sesión</button>
     let uploader = this.state.user ?
-      <Home/> :
-      <h4>Logueate para comprar!</h4>
+      <Home/> :  <pre></pre>
+      
     return (
       <div>
         {authButton}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
+import '../css/crearproducto.scss';
 
 class CrearProducto extends Component {
     handleSubmit = (e) => {
@@ -26,8 +27,8 @@ return (
    <input required type="text" ref={(input) => this.getNombre = input}
    placeholder="Nombre" /><br /><br />
    <textarea required rows="5" ref={(input) => this.getDescripcion = input}
-   cols="28" placeholder="Descripcion" /><br /><br />
-   <button>Publicar</button>
+   cols="24" placeholder="Descripcion" /><br /><br />
+   <button className="publicar"  >Publicar</button>
   </form>
 </div>
 );

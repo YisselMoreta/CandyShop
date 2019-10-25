@@ -1,0 +1,14 @@
+.productos {
+    height: 100%;
+    display: grid;
+    grid-template: repeat(2, 1fr);
+    justify-content: space-around;
+    text-align: center;
+    background: #00416A;  
+    background: -webkit-linear-gradient(to right, #FFE000, #799F0C, #00416A); 
+    background: linear-gradient(to right, #FFE000, #799F0C, #00416A); 
+
+    .producto {
+        border: 2px solid black;
+    }
+}

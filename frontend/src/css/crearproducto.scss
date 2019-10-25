@@ -1,0 +1,64 @@
+.producto-container{
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+background: #36D1DC; 
+background: -webkit-linear-gradient(to right, #5B86E5, #36D1DC);  
+background: linear-gradient(to right, #5B86E5, #36D1DC); 
+    h1 {
+        font-size: 2.5rem;
+        @media (width: 320px) {font-size: 2.3rem;}
+        @media (min-width: 600px) {font-size: 3rem;}
+        @media (min-width: 1024px) {font-size: 4rem;}
+    }
+
+    form {
+        padding-bottom: 16em;
+        @media (width: 320px) {padding-bottom: 10em;}
+        @media (min-width: 600px) {padding-bottom: 16em;}
+        @media (min-width: 1024px) {padding-bottom: 6em;}
+    }
+    
+    input, textarea {
+        border: 2px solid white;
+        border-radius: 0.7em;
+        background: transparent;
+        outline: none;
+        padding: 1em;
+        @media (width: 320px) {padding: 0.5em;}
+        @media (min-width: 600px) {padding: 2em; width: 50vw;}
+        @media (min-width: 1024px) {padding: 3em; width: 60vw;}
+        
+
+    }
+    input:focus {
+        background-color: cornflowerblue;
+    }
+    textarea:focus {
+        background-color: cornflowerblue;
+    }
+    .publicar {
+        
+        all: unset;
+        margin-left: 30%;
+        border: 2px solid white;
+        border-radius: 0.5em;
+        padding: 0.3em;
+        background: transparent;
+        color: white;
+        background: cornflowerblue;
+        font-size: 1.2em;
+        @media (min-width: 600px) {font-size: 1.8em;}
+        @media (min-width: 1024px) {font-size: 2em;margin-left: 40%;}
+    }
+    
+
+}
+@media (min-width: 400px) {}
+@media (min-width: 600px) {}
+@media (min-width: 800px) {}
+@media (min-width: 900px) {}
+@media (min-width: 1024px) {}
