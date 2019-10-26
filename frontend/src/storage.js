@@ -1,22 +1,21 @@
-import {fromJS} from 'immutable'
+import { save, load } from "redux-localstorage-simple";
+import { createStore,applyMiddleware, compose } from 'redux';
+import productoReducer from './reductores/productoReducer';
 
-export const loadState = () => {
-  try {
-    const serializedData = localStorage.getItem('state')
-    if (serializedData === null){
-      return undefined // Si no existe el state en el local storage devolvemos undefined para que cargue el state inicial que hayamos definido
-    }
-    return fromJS(JSON.parse(serializedData)) // Si encontramos con exito nuestro storage lo devolvemos.
-  } catch (error) {
-    return undefined // Si ocurre algun error, devuelvo undefined para cargar el state inicial.
-  }
-}
 
-export const saveState = (state) => {
-  try {
-    let serializedData = JSON.stringify(state.toJS())
-    localStorage.setItem('state', serializedData)
-  } catch (error) {
-	return 'Ha habido un error'   
-  }
-}
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const createStoreWithMiddleware 
+    = applyMiddleware(
+        save() // Saving done here
+    )(createStore)
+
+const store = createStoreWithMiddleware(
+  productoReducer,    
+      load({
+        preloadedState:{
+          state:[]
+        }
+    }), // Loading done here   
+    composeEnhancers(), 
+);
+export default store;
