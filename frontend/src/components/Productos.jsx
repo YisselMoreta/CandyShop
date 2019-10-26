@@ -6,9 +6,12 @@ import '../css/productos.scss'
 
  class Productos extends Component {
     render() {
+        var producto = this.state.producto.concat([producto]);  
+        this.setState({producto: producto})
         return (
             <div className="productos" >
                 <h1>Todos los productos</h1>
+                
                 {this.props.productos.map((producto)=>(
                     <div className="producto" key={producto.id}>
                         {producto.editar ? <EditarProducto producto={producto} key={producto.id}/> : <Producto producto={producto}
